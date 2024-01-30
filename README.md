@@ -2,7 +2,7 @@
 
 This is an example project showcasing HTTP file examples. 
 
-The `.http` file consists of GET, POST, PUT & DELETE requests based off the exposed endpoints from the mock todo minimal api. 
+The `.http` file [http-file-examples.http](http-file-examples.http) consists of GET, POST, PUT & DELETE requests based off the exposed endpoints from the mock todo minimal api. 
 
 A `.env` file has also been included to demonstrate it's usage.
 
