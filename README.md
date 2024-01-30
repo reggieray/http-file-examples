@@ -16,6 +16,10 @@ Start the API
 dotnet run 
 ```
 
-Use the `.http` file either in Visual Studio or vscode using the [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) extension.
+Use the `.http` file either in Visual Studio 
 
-<img src="http-file-example.gif" style="max-width: 100%">
+<img src="http-file-example-vs.gif" style="max-width: 100%">
+
+or vscode using the [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) extension.
+
+<img src="http-file-example-vs-code.gif" style="max-width: 100%">
