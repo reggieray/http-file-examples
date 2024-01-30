@@ -1,0 +1,44 @@
+@base_address = http://localhost:5295
+
+ 
+GET {{base_address}}/todos/
+Accept: application/json
+
+###
+
+
+GET {{base_address}}/todos/{{$guid}}
+Authorization: Basic {{$dotenv Authorization}}
+Accept: application/json
+
+### 
+
+POST {{base_address}}/todos/
+Authorization: Basic {{$dotenv Authorization}}
+Content-Type: application/json
+
+{
+    "id": "{{$guid}}",
+    "title": "Todo Title ({{$timestamp}})",
+    "isComplete": false
+}
+
+### 
+
+
+@todo_id = {{$guid}}
+PUT {{base_address}}/todos/{{todo_id}}
+Authorization: Basic {{$dotenv Authorization}}
+Content-Type: application/json
+
+{
+    "id": "{{todo_id}}",
+    "title": "Todo Title ({{$timestamp}})",
+    "isComplete": false
+}
+
+### 
+
+DELETE {{base_address}}/todos/{{$guid}}
+Authorization: Basic {{$dotenv Authorization}}
+Accept: application/json
