@@ -17,3 +17,5 @@ dotnet run
 ```
 
 Use the `.http` file either in visual studio or vscode using the [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) extension.
+
+<img src="http-file-example.gif" style="max-width: 100%">
